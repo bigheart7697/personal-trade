@@ -1,0 +1,22 @@
+{
+  "mode": "sim",
+  "ibkr": {
+    "gateway_url": "https://localhost:5000/v1/api"
+  },
+  "paper": {
+    "strategies": [],
+    "data_dir": "data"
+  },
+  "risk": {
+    "max_position_weight": 0.20,
+    "max_gross_exposure": 1.0,
+    "max_drawdown": 0.25
+  },
+  "agent": {
+    "enabled": false,
+    "provider": "anthropic",
+    "model": "",
+    "max_tokens": 0,
+    "base_url": ""
+  }
+}

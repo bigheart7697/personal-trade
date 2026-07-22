@@ -1,0 +1,35 @@
+# binaries (anchored to repo root — an unanchored "tradeforge" would ignore cmd/tradeforge/)
+/tradeforge
+/tradeforge.exe
+*.exe
+dist/
+
+# secrets & local config
+.env
+.env.*
+*.key
+config.local.*
+# the user's real runtime config may hold the live_approval block
+/config.json
+
+# data caches (testdata/ IS committed; downloaded market data is not)
+# anchored: an unanchored "data/" would ignore internal/data/
+/data/
+*.db
+*.sqlite
+
+# editor/OS noise
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# transient run/experiment output written to the repo root
+*.log
+/err.txt
+/out.txt
+/strategies.json
+
+# nested standalone repo (its own .git) — never track from here
+/personal-trade/
+/personal-trade-scheduler/

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tradeforge",
+      "runtimeExecutable": "go",
+      "runtimeArgs": ["run", "./cmd/tradeforge", "serve"],
+      "port": 8420
+    }
+  ]
+}
